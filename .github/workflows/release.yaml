@@ -16,26 +16,10 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
           go-version: stable
-
-      - name: Delete existing release assets
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          tag_name=$(echo ${{ github.ref }} | sed 's/refs\/tags\///')
-          release_id=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
-            "https://api.github.com/repos/${{ github.repository }}/releases/tags/${tag_name}" | jq -r '.id')
-          assets=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
-            "https://api.github.com/repos/${{ github.repository }}/releases/${release_id}/assets" | jq -r '.[].id')
-          for asset in $assets; do
-            curl -X DELETE -H "Authorization: token $GITHUB_TOKEN" \
-              "https://api.github.com/repos/${{ github.repository }}/releases/assets/${asset}"
-          done
-
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v6
         with:
