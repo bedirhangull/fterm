@@ -1,0 +1,7 @@
+[
+    {
+      "shortcut": "dck l",
+      "command": "docker ps",
+      "description": "listing all running containers"
+    }
+  ]
