@@ -1,5 +1,5 @@
 
-![alt text](https://iili.io/dnB7z91.png)
+![alt text](https://iili.io/dnlCrjR.png)
 
 # fTerm - for a faster terminal operation
 
