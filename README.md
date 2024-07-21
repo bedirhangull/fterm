@@ -1,5 +1,5 @@
 
-![alt text](https://iili.io/dnlCrjR.png)
+![alt text](https://iili.io/dnB7z91.png)
 
 # fTerm - for a faster terminal operation
 
@@ -10,11 +10,20 @@ fTerm is very similar to allias but has different commands than allias. You can 
 
 
 
+
+
 ## Installation
+
+To install fTerm using Homebrew:
+
++ ```brew install fterm ```
+
+
+## Run shortcut
 
 if you want to run a shortcut that you have added, just:
 
-+ fterm “SHORTCUT”
++ fterm “<SHORTCUT>”
 
 other options:
 
@@ -22,7 +31,7 @@ other options:
 ## Usage
 
 ```
-fTerm is a CLI tool for managing shortcuts.
+Fastexec is a CLI tool for managing shortcuts.
 
 Usage:
   fterm [command] [flags]
