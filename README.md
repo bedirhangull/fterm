@@ -16,6 +16,7 @@ fTerm is very similar to allias but has different commands than allias. You can 
 
 To install fTerm using Homebrew:
 
++ ```brew tap bedirhangull/fterm ```
 + ```brew install fterm ```
 
 
