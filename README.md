@@ -23,7 +23,7 @@ To install fTerm using Homebrew:
 
 if you want to run a shortcut that you have added, just:
 
-+ fterm “<SHORTCUT>”
++ fterm “SHORTCUT”
 
 other options:
 
@@ -31,7 +31,7 @@ other options:
 ## Usage
 
 ```
-Fastexec is a CLI tool for managing shortcuts.
+fTerm is a CLI tool for managing shortcuts.
 
 Usage:
   fterm [command] [flags]
